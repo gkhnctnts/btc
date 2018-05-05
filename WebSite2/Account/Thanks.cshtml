@@ -1,0 +1,25 @@
+﻿@{
+    
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Thanks for registering";
+}
+
+@if (!WebSecurity.IsAuthenticated) {
+    <hgroup class="title">
+        <h1>@Page.Title.</h1>
+        <h2>....</h2>
+    </hgroup>
+
+    <p>
+       
+    </p>
+} else {
+    <hgroup class="title">
+        <h1>@Page.Title.</h1>
+        <h2>...</h2>
+    </hgroup>
+
+    <p>
+        
+    </p>
+}
